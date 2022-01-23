@@ -1,0 +1,20 @@
+@import '~styles/settings';
+@import '~styles/functions';
+
+.header {
+  width: 100vw;
+  height: rem(96px);
+  padding: rem(19px) 0 rem(49px) rem(30px);
+  background: $white;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+    rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  .all-locations {
+    margin-bottom: rem(5px);
+    font-size: rem(16px);
+    color: $grey;
+  }
+  .acme-locations {
+    font-size: rem(22px);
+    color: $main;
+  }
+}
