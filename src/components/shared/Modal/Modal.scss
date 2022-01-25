@@ -1,0 +1,61 @@
+@import '~styles/settings';
+@import '~styles/functions';
+@import '~styles/helpers';
+
+.modal-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 1, 2, 0.5);
+  @include alignMe(center, center);
+  .modal-inner-container {
+    position: relative;
+    width: rem(440px);
+    padding: rem(16px) rem(25px) 0 rem(25px);
+    background: $white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: rem(3px);
+    .modal-header {
+      width: 100%;
+      height: rem(56px);
+      margin-bottom: rem(16px);
+      @include alignMe(space-between, center);
+      .modal-headline {
+        font-size: rem($font-size-md);
+        font-weight: $font-weight-semibold;
+      }
+      .modal-close-icon {
+        cursor: pointer;
+      }
+    }
+    .modal-content {
+      .modal-description {
+        margin-top: rem(20px);
+        font-size: rem($font-size-s);
+        font-weight: $font-weight-regular;
+        line-height: rem(24px);
+        .desc-headline {
+          font-size: rem($font-size-s);
+          font-weight: $font-weight-semibold;
+        }
+      }
+    }
+    .footer {
+      height: rem(52px);
+      @include alignMe(flex-end, flex-end);
+      margin-top: rem(15px);
+      .button {
+        width: rem(64px);
+        height: rem(32px);
+        margin-bottom: rem(10px);
+        background: $green;
+        border-radius: rem(16px);
+        color: $white;
+        cursor: pointer;
+      }
+    }
+  }
+}
