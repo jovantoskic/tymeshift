@@ -1,0 +1,20 @@
+@import '~styles/settings';
+@import '~styles/functions';
+@import '~styles/helpers';
+
+.location-details-container {
+  div {
+    @include alignMe(flex-start, center);
+    &:not(:last-child) {
+      margin-bottom: rem(8px);
+    }
+    span {
+      margin-left: rem(8px);
+      font-size: rem(14px);
+      font-weight: $font-weight-regular;
+      &::first-letter {
+        text-transform: uppercase;
+      }
+    }
+  }
+}
