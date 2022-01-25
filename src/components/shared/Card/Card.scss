@@ -1,0 +1,39 @@
+@import '~styles/settings';
+@import '~styles/functions';
+@import '~styles/helpers';
+
+.card-container {
+  position: relative;
+  width: 100%;
+  height: rem(139px);
+  @include alignMe(space-between, flex-start, column);
+  padding: rem(15px) rem(25px);
+  border-radius: rem(3px);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  cursor: pointer;
+  .headline {
+    margin-bottom: rem(5px);
+    font-size: rem($font-size-l);
+    font-weight: $font-weight-bold;
+  }
+  .edit-icon-container {
+    width: rem(26px);
+    height: rem(26px);
+    position: absolute;
+    top: rem(16px);
+    right: rem(16px);
+    @include alignMe(center, center);
+    border-radius: 50%;
+    background: $white;
+    .edit-icon {
+      visibility: hidden;
+    }
+  }
+
+  &:hover {
+    background: #f6f6f6;
+    .edit-icon {
+      visibility: visible;
+    }
+  }
+}
