@@ -8,11 +8,11 @@
         <g id="Assets" transform="translate(-28.000000, -129.000000)">
             <g id="Group" transform="translate(28.000000, 27.000000)">
                 <g transform="translate(0.000000, 102.000000)" id="Views">
-                    <mask id="mask-2" fill="white">
+                    <mask id="mask1" fill="grey">
                         <use xlink:href="#path-1"></use>
                     </mask>
                     <use id="Mask" fill="#FFFFFF" xlink:href="#path-1"></use>
-                    <g id="Group" mask="url(#mask-2)" fill="#001122">
+                    <g id="Group" mask="url(#mask1)" fill="#001122">
                         <g id="🎨-Color">
                             <rect id="Rectangle-2" x="0" y="0" width="16" height="16"></rect>
                         </g>
