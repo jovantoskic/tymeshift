@@ -1,0 +1,8 @@
+@import '~styles/functions';
+
+.locations-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: rem(25px);
+  row-gap: rem(25px);
+}
